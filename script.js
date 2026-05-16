@@ -1,5 +1,7 @@
 'use strict';
 
+document.getElementById('copy-year').textContent = new Date().getFullYear();
+
 /* NAV */
 const navbar   = document.getElementById('navbar');
 const burger   = document.getElementById('burger');
