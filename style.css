@@ -98,9 +98,10 @@ select,input,textarea{font-family:inherit}
 .disc-card{background:var(--g800);overflow:hidden;display:flex;flex-direction:column;transition:transform var(--tr)}
 .disc-card:hover{transform:translateY(-5px)}
 .disc-featured{grid-column:span 2}
-.disc-img-box{height:200px;background-size:cover;background-position:center 20%;position:relative}
+.disc-img-box{height:320px;background-size:cover;background-position:center top;position:relative}
 .disc-img-box::after{content:'';position:absolute;inset:0;background:rgba(0,0,0,.3)}
-.disc-featured .disc-img-box{height:280px}
+.disc-featured .disc-img-box{height:400px}
+.disc-img-sv{height:320px;background-position:center top}
 .disc-info{padding:22px 22px 26px;flex:1;display:flex;flex-direction:column}
 .disc-num{display:inline-flex;align-items:center;color:var(--g400);margin-bottom:10px;transition:color var(--tr)}
 .disc-num svg{width:22px;height:22px;flex-shrink:0}
@@ -223,10 +224,11 @@ select,input,textarea{font-family:inherit}
   .nav-links a{font-size:20px}
   .nav-cta{width:100%;text-align:center;justify-content:center;padding:13px 24px!important}
   .burger{display:flex;padding:13px 9px}
-  .nav-logo-img{height:48px}
+  .nav-logo-img{height:96px}
   .hero-btns{flex-direction:column}
   .hero-btns .btn{width:100%;justify-content:center}
   .hero-scroll{display:none}
+  .hero-bg{background-position:20% 20%}
   .hero-overlay{background:linear-gradient(to bottom,rgba(0,0,0,.75) 0%,rgba(0,0,0,.45) 50%,rgba(0,0,0,.7) 100%)}
   .disc-grid{grid-template-columns:1fr}
   .disc-featured{grid-column:auto}
@@ -241,6 +243,8 @@ select,input,textarea{font-family:inherit}
   .sec-title{font-size:clamp(36px,8vw,100px)}
   .contact-heading{font-size:22px}
   .cta-section{padding:60px 20px}
+  .disc-img-kids{height:320px;background-position:center center;background-size:cover}
+  .disc-img-sv{height:480px;background-position:center top;background-size:cover}
 }
 @media(max-width:480px){
   .footer-cols{grid-template-columns:1fr}
